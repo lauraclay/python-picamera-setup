@@ -8,10 +8,10 @@ This workshop guides you through setting up the Raspberry Pi camera module, taki
 
 ### Connecting the camera
 
-1. Locate the camera port next to the ethernet port
-2. Lift the tab on the top
-3. Place the strip in the connector (blue side facing the ethernet port)
-4. While holding the strip in place, push down the tab
+1. Locate the camera port next to the ethernet port.
+2. Lift the tab on the top.
+3. Place the strip in the connector (blue side facing the ethernet port).
+4. While holding the strip in place, push down the tab.
 
 ### Activate the camera
 
@@ -26,9 +26,9 @@ This workshop guides you through setting up the Raspberry Pi camera module, taki
 
 ### Test the camera
 
-1. Login again with username `pi` and password `raspberry`
-2. At the command prompt enter `raspistill -o image.jpg`
-3. On the screen you should see a preview appear for a few seconds, and then change briefly while the image is captured
+1. Login again with username `pi` and password `raspberry`.
+2. At the command prompt enter `raspistill -o image.jpg`.
+3. On the screen you should see a preview appear for a few seconds, and then change briefly while the image is captured.
 
 ### Camera programming: capture an image
 
@@ -38,9 +38,9 @@ Start by installing the Python `picamera` and GPIO library packages:
 sudo apt-get install python-picamera python3-picamera python-rpi.gpio
 ```
 
-1. At the command prompt enter `startx` to start the graphical desktop environment
-2. Double click on `LXTerminal` to start a command line, and enter `sudo idle` to start the Python environment
-3. Select File > New Window from the menu to start a text editor
+1. At the command prompt enter `startx` to start the graphical desktop environment.
+2. Double click on `LXTerminal` to start a command line, and enter `sudo idle` to start the Python environment.
+3. Select File > New Window from the menu to start a text editor.
 4. Enter the following code (case is important!):
 
     ```python
@@ -54,8 +54,8 @@ sudo apt-get install python-picamera python3-picamera python-rpi.gpio
         camera.stop_preview()
     ```
 
-5. Select File > Save from the menu and give your script a name, e.g. `workshop.py`
-6. Select Run > Run Module from the menu (or just press F5) to run the script
+5. Select File > Save from the menu and give your script a name, e.g. `workshop.py`.
+6. Select Run > Run Module from the menu (or just press F5) to run the script.
 
 ### Camera programming: capture when activated
 
@@ -80,9 +80,9 @@ sudo apt-get install python-picamera python3-picamera python-rpi.gpio
         camera.stop_preview()
     ```
 
-3. Delete image.jpg from the desktop
-4. Save and run your script
-5. Once the preview has started, press the button connected to your Pi to capture an image
+3. Delete image.jpg from the desktop.
+4. Save and run your script.
+5. Once the preview has started, press the button connected to your Pi to capture an image.
 
 ### Camera programming: countdown capture (selfies!)
 
@@ -104,9 +104,9 @@ sudo apt-get install python-picamera python3-picamera python-rpi.gpio
         camera.stop_preview()
     ```
 
-2. Delete image.jpg from the desktop
-3. Save and run your script
-4. Press the button and try to take a selfie
+2. Delete image.jpg from the desktop.
+3. Save and run your script.
+4. Press the button and try to take a selfie.
 
 ### Camera programming: camcorders
 
@@ -130,8 +130,8 @@ sudo apt-get install python-picamera python3-picamera python-rpi.gpio
         camera.stop_preview()
     ```
 
-2. Save and run your script
-3. Press the button to start recording video; press it again to stop and exit the program
+2. Save and run your script.
+3. Press the button to start recording video; press it again to stop and exit the program.
 
 ### Camera programming: circular buffers
 
@@ -165,9 +165,9 @@ sudo apt-get install python-picamera python3-picamera python-rpi.gpio
                 output.write(data)
     ```
 
-2. Delete video.h264 from the desktop
-3. Save and run your script
-4. Press the button to save the last 20+ seconds of video to the drive
+2. Delete video.h264 from the desktop.
+3. Save and run your script.
+4. Press the button to save the last 20+ seconds of video to the drive.
 
 ## Camera Project Ideas
 
@@ -175,7 +175,7 @@ The tasks presented in the workshop may seem basic, but with some simple alterat
 
 ### Timelapse photography
 
-A timelapse sequence can be easily constructed by running the basic capture program in a loop, and adjusting the delay to the gap required. Timelapse sequences can be used to visualise many natural processes that are not easy to see otherwise such as plant growth and decay, long term construction projects and weather cycles. Here is some example code:
+A timelapse sequence can be easily constructed by running the basic capture program in a loop, and adjusting the delay to the gap required. Timelapse sequences can be used to visualise many natural processes that are not easy to see otherwise such as plant growth and decay, long term construction projects, and weather cycles. Here is some example code:
 
 ```python
 import time
